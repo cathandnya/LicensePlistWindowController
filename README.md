@@ -1,6 +1,6 @@
 # LicensePlistWindowController
 
-`LicensePlistWindowController` is a implementation of displaying `LicensePlist` Settings.bundle file.
+`LicensePlistWindowController` is a implementation of displaying `LicensePlist` Settings.bundle file on __macos__.
 
 ![Screenshot](https://raw.githubusercontent.com/cathandnya/LicensePlistWindowController/master/screenshot.png)
 
