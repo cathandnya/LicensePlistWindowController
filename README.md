@@ -2,6 +2,10 @@
 
 `LicensePlistWindowController` is a implementation of displaying `LicensePlist` Settings.bundle file.
 
+## Cocoapods
+
+`pod 'LicensePlistWindowController'`
+
 ## Usage
 
 Create Settings.bundle. (ref: https://github.com/mono0926/LicensePlist )
