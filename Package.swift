@@ -1,4 +1,4 @@
-// swift-tools-version:5.5
+// swift-tools-version:5.3
 import PackageDescription
 
 let package = Package(
@@ -17,11 +17,6 @@ let package = Package(
             name: "LicensePlistWindowController",
             path: "LicensePlistWindowController/LicensePlistWindowController",
             exclude: ["Info.plist", "LicensePlistWindowController.h"],
-            sources: [
-                "LicensePlistWindowController.swift",
-                "SourceViewController.swift",
-                "TextViewController.swift",
-            ],
             resources: [
                 .process("LicensePlistWindowController.storyboard")
             ]

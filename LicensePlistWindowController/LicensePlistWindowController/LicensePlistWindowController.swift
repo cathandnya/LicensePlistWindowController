@@ -67,7 +67,7 @@ struct LicenseItem {
 }
 
 extension LicensePlistWindowController {
-    static var resourceBundle: Bundle {
+    fileprivate static var resourceBundle: Bundle {
         #if SWIFT_PACKAGE
         return Bundle.module
         #else
