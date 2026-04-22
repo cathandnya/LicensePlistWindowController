@@ -14,11 +14,35 @@ public class LicensePlistWindowController: NSWindowController {
         guard let items = load(info: bundle) else {
             return nil
         }
-        guard let wc = NSStoryboard(name: "LicensePlistWindowController", bundle: resourceBundle).instantiateInitialController() as? LicensePlistWindowController else {
-            return nil
-        }
+        let wc = makeWindowController()
         wc.items = items
         return wc
+    }
+
+    private static func makeWindowController() -> LicensePlistWindowController {
+        let splitViewController = NSSplitViewController()
+        let sourceViewController = SourceViewController(programmatic: ())
+        let textViewController = TextViewController(programmatic: ())
+
+        let sourceItem = NSSplitViewItem(viewController: sourceViewController)
+        sourceItem.minimumThickness = 180
+        let textItem = NSSplitViewItem(viewController: textViewController)
+
+        splitViewController.addSplitViewItem(sourceItem)
+        splitViewController.addSplitViewItem(textItem)
+
+        let contentRect = NSRect(x: 0, y: 0, width: 678, height: 361)
+        let window = NSWindow(
+            contentRect: contentRect,
+            styleMask: [.titled, .closable, .miniaturizable, .resizable],
+            backing: .buffered,
+            defer: false
+        )
+        window.title = "License"
+        window.isReleasedWhenClosed = false
+        window.contentViewController = splitViewController
+
+        return LicensePlistWindowController(window: window)
     }
 
     static func load(info bundle: Bundle) -> [LicenseItem]? {
@@ -64,14 +88,4 @@ struct LicenseItem {
     let file: String
     let title: String
     let text: String
-}
-
-extension LicensePlistWindowController {
-    fileprivate static var resourceBundle: Bundle {
-        #if SWIFT_PACKAGE
-        return Bundle.module
-        #else
-        return Bundle(for: LicensePlistWindowController.self)
-        #endif
-    }
 }
