@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0E443FE322B2022E00C598ED /* LicensePlistWindowController.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E443FE122B2022E00C598ED /* LicensePlistWindowController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0E44400B22B203E500C598ED /* LicensePlistWindowController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E44400A22B203E500C598ED /* LicensePlistWindowController.storyboard */; };
 		0E44400D22B204F100C598ED /* LicensePlistWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E44400C22B204F100C598ED /* LicensePlistWindowController.swift */; };
 		0E44400F22B207D500C598ED /* SourceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E44400E22B207D500C598ED /* SourceViewController.swift */; };
 		0E44401222B207E200C598ED /* TextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E44401022B207E200C598ED /* TextViewController.swift */; };
@@ -18,7 +17,6 @@
 		0E443FDE22B2022E00C598ED /* LicensePlistWindowController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LicensePlistWindowController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E443FE122B2022E00C598ED /* LicensePlistWindowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LicensePlistWindowController.h; sourceTree = "<group>"; };
 		0E443FE222B2022E00C598ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0E44400A22B203E500C598ED /* LicensePlistWindowController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LicensePlistWindowController.storyboard; sourceTree = "<group>"; };
 		0E44400C22B204F100C598ED /* LicensePlistWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LicensePlistWindowController.swift; sourceTree = "<group>"; };
 		0E44400E22B207D500C598ED /* SourceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceViewController.swift; sourceTree = "<group>"; };
 		0E44401022B207E200C598ED /* TextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewController.swift; sourceTree = "<group>"; };
@@ -56,7 +54,6 @@
 			children = (
 				0E443FE122B2022E00C598ED /* LicensePlistWindowController.h */,
 				0E443FE222B2022E00C598ED /* Info.plist */,
-				0E44400A22B203E500C598ED /* LicensePlistWindowController.storyboard */,
 				0E44400C22B204F100C598ED /* LicensePlistWindowController.swift */,
 				0E44400E22B207D500C598ED /* SourceViewController.swift */,
 				0E44401022B207E200C598ED /* TextViewController.swift */,
@@ -133,7 +130,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E44400B22B203E500C598ED /* LicensePlistWindowController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

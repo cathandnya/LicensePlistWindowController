@@ -16,10 +16,7 @@ let package = Package(
         .target(
             name: "LicensePlistWindowController",
             path: "LicensePlistWindowController/LicensePlistWindowController",
-            exclude: ["Info.plist", "LicensePlistWindowController.h"],
-            resources: [
-                .process("LicensePlistWindowController.storyboard")
-            ]
+            exclude: ["Info.plist", "LicensePlistWindowController.h"]
         ),
     ]
 )
