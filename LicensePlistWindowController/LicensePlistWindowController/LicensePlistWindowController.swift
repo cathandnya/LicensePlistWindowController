@@ -14,7 +14,7 @@ public class LicensePlistWindowController: NSWindowController {
         guard let items = load(info: bundle) else {
             return nil
         }
-        guard let wc = NSStoryboard(name: "LicensePlistWindowController", bundle: Bundle(for: LicensePlistWindowController.self)).instantiateInitialController() as? LicensePlistWindowController else {
+        guard let wc = NSStoryboard(name: "LicensePlistWindowController", bundle: resourceBundle).instantiateInitialController() as? LicensePlistWindowController else {
             return nil
         }
         wc.items = items
@@ -60,8 +60,18 @@ public class LicensePlistWindowController: NSWindowController {
 }
 
 struct LicenseItem {
-    
+
     let file: String
     let title: String
     let text: String
+}
+
+extension LicensePlistWindowController {
+    fileprivate static var resourceBundle: Bundle {
+        #if SWIFT_PACKAGE
+        return Bundle.module
+        #else
+        return Bundle(for: LicensePlistWindowController.self)
+        #endif
+    }
 }
