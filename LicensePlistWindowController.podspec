@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "LicensePlistWindowController"
-  spec.version      = "1.0.0"
+  spec.version      = "1.2.0"
   spec.summary      = "LicensePlistWindowController is a implementation of displaying LicensePlist Settings.bundle file."
 
   # This description is used to generate tags and improve search results.
@@ -62,7 +62,7 @@ Pod::Spec.new do |spec|
   #  the deployment target. You can optionally include the target after the platform.
   #
 
-  spec.platform     = :macos, "10.13"
+  spec.platform     = :macos, "12.0"
 
   #  When using multiple platforms
   # spec.ios.deployment_target = "5.0"
